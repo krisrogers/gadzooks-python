@@ -20,8 +20,8 @@ To run the example tests:
 ## Screenshots
 Some shots from the output of running the examples tests:
 
-![Summary](examples/screens/summary.png)
+![Summary](krisrogers.github.com/gadzooks/summary.png)
 
-![Test Details](examples/screens/tests.png)
+![Test Details](krisrogers.github.com/gadzooks/tests.png)
 
-![Raw Log](examples/screens/log.png)
+![Raw Log](krisrogers.github.com/gadzooks/log.png)
