@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Gadzooks - Test Results</title>
+        {head_content}
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
+                        <p class="navbar-text pull-right app-name">
+                            Gadzooks!
+                        </p>
+                        <ul id="nav-header" class="nav">
+                            <li class="active" onclick="showContent('summary', this);"><a href="#">Summary</a></li>
+                            <li onclick="filterTests();showContent('tests', this);"><a href="#">All Tests</a></li>
+                            <li onclick="showContent('log', this);"><a href="#about">Raw Log</a></li>
+                            <li onclick="showContent('about', this);"><a href="#about">About</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+  
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <div class="well sidebar-nav">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Test Modules</li>
+                            {test_group_links}
+                        </ul>
+                    </div><!--/.well -->
+                </div><!--/span-->
+                <div class="span9">
+                    <div id="main-content" class="hero-unit">
+                        <div id="summary">{summary}</div>
+                        <div id="tests" style="display:none">
+                            <h2>Test Details</h2>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <td><b>Test</b></td>
+                                    <td style="width: 30px;"><b>Status</b></td>
+                                </tr>
+                                {tests}
+                            </table>
+                        </div>
+                        <div id="log" style="display:none">
+                            <h2>Raw Log</h2>
+                            {log}
+                        </div>
+                        <div id="about" style="display:none">
+                            <h3>Powered By</h3>
+                            <ul>
+                                <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a></li>
+                                <li><a href="http://jquery.com/" target="_blank">Jquery</a></li>
+                                <li><a href="http://glyphicons.com/" target="_blank">Glyphicons</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--/span-->
+            </div><!--/row-->  
+      </div><!--/.fluid-container-->
+    </body>
+</html>

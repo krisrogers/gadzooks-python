@@ -1,0 +1,70 @@
+<h2 style="margin-bottom: 20px;">Summary</h2>
+<div><span class="label label-inverse">Discovery Directory</span><br/>{discovery_dir}</div>
+<div><span class="label label-inverse">Discovery Pattern</span><br/>{discovery_pattern}</div>
+<div>
+    <h3>Tests</h3>
+    <table class="summary-section table table-bordered">
+        <tr>
+            <td class="summary-stat" style="width:70px;">Total</td>
+            <td style="width: 20px;"><span class="badge badge-inverse">{num_tests}</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="summary-stat">Passed</td>
+            <td><span style="float:left" class="badge badge-success">{num_tests_pass}</span></td>
+            <td>
+                
+                <div class="progress progress-success progress-striped">
+                    <div class="bar" style="width: {num_tests_pass_pct}%"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div class="summary-stat">Failed</div></td>
+            <td><span class="badge badge-important">{num_tests_fail}</span></td>
+            <td>
+                <div class="progress progress-danger progress-striped">
+                    <div class="bar" style="width: {num_tests_fail_pct}%"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div class="summary-stat">Skipped</div></td>
+            <td><span class="badge badge-info">{num_tests_skip}</span></td>
+            <td>
+                <div class="progress progress-info progress-striped">
+                    <div class="bar" style="width: {num_tests_skip_pct}%"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h3>Test Modules</h3>
+    <table class="summary-section table table-bordered">
+        <tr>
+            <td class="summary-stat" style="width:70px;">Total</td>
+            <td style="width: 20px;"><span class="badge badge-inverse">{num_groups}</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="summary-stat">Passed</td>
+            <td><span style="float:left" class="badge badge-success">{num_groups_pass}</span></td>
+            <td>
+                
+                <div class="progress progress-success progress-striped">
+                    <div class="bar" style="width: {num_groups_pass_pct}%"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div class="summary-stat">Failed</div></td>
+            <td><span class="badge badge-important">{num_groups_fail}</span></td>
+            <td>
+                <div class="progress progress-danger progress-striped">
+                    <div class="bar" style="width: {num_groups_fail_pct}%"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
