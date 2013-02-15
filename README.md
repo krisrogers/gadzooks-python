@@ -16,3 +16,12 @@ For a list of supported options:
 To run the example tests:
 
     python gadzooks/ --discovery_dir gadzooks/examples/tests
+    
+## Screenshots
+Some shots from the output of running the examples tests:
+
+![Summary](http://imgur.com/s5O2yDI)
+
+![Test Details](http://imgur.com/Sc0LFXU)
+
+![Raw Log](http://imgur.com/dRiDz1h)
