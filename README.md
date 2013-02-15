@@ -20,8 +20,8 @@ To run the example tests:
 ## Screenshots
 Some shots from the output of running the examples tests:
 
-![Summary](http://imgur.com/s5O2yDI)
+![Summary](examples/screens/summary.png)
 
-![Test Details](http://imgur.com/Sc0LFXU)
+![Test Details](examples/screens/tests.png)
 
-![Raw Log](http://imgur.com/dRiDz1h)
+![Raw Log](examples/screens/log.png)
