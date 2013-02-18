@@ -3,19 +3,29 @@ Gadzooks!
 
 Gadzooks! is a simple utility for displaying the results of Python unit tests in HTML.
 
-Right now it is in very early stages and only supports being run in test discovery mode::
-
-    python gadzooks --discovery_dir /path_to_tests/
+It can be run directly from source::
     
-For a list of supported options::
+    python path_to_gadzooks_source/gadzooks/ -h
 
-    python gadzooks -h
+Or, it can be installed::
+
+    cd path_to_gadzooks_source
+    python setup.py install
+    
+Once installed, run from the command line (make sure Python's scripts directory is on your PATH)::
+
+    gadzooks --discovery_dir /path_to_tests/
+    
+Or, from within Python::
+
+    from gadzooks.core import TestRunner
+    TestRunner(discovery_dir='.', discovery_pattern='test*.py', output_file='test_results.html') 
     
 Examples
 ========
 To run the example tests::
 
-    python gadzooks --discovery_dir path_to_gadzooks_source/examples/tests
+    gadzooks --discovery_dir path_to_gadzooks_source/examples/tests
 
 Authors
 =======

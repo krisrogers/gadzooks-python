@@ -6,7 +6,7 @@ It requires Python 2.7+ due to the addition of test discovery features in unitte
 
 It can be run directly from source
     
-    python path_to_gadzooks_source/gadzooks/
+    python path_to_gadzooks_source/gadzooks/ -h
 
 Or, it can be installed:
 
@@ -15,10 +15,9 @@ Or, it can be installed:
     
 Once installed, run from the command line (make sure Python's scripts directory is on your PATH):
 
-    gadzooks -h
     gadzooks --discovery_dir /path_to_tests/
     
-Or, from within a python module:
+Or, from within Python:
 
     from gadzooks.core import TestRunner
     TestRunner(discovery_dir='.', discovery_pattern='test*.py', output_file='test_results.html') 
