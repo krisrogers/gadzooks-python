@@ -1,0 +1,4 @@
+include CHANGES README LICENCE
+recursive-include gadzooks *.py *.html *.js *.css
+include docs/Makefile
+recursive-include docs/source *
